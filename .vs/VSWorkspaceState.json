@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\img",
+    "\\img\\about",
+    "\\img\\logos",
+    "\\scss",
+    "\\vendor"
   ],
-  "SelectedNode": "\\gulpfile.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
