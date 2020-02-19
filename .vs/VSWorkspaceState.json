@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\img",
     "\\img\\about",
     "\\img\\logos",
-    "\\scss",
-    "\\vendor"
+    "\\mail"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\mail\\contact_me.php",
   "PreviewInSolutionExplorer": false
 }
