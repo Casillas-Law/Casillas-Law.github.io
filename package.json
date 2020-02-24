@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.10.2",
+        "@google/clasp": "^2.3.0",
         "bootstrap": "^4.3.1",
         "env2": "^2.2.2",
         "jquery": "^3.4.1",

@@ -1,4 +1,4 @@
-$(function() {
+(function() {
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
@@ -66,7 +66,7 @@ $(function() {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     // xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded", "Access-Control-Allow-Origin:*");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
@@ -102,4 +102,4 @@ $(function() {
       buttons[i].disabled = true;
     }
   }
-});
+})();
