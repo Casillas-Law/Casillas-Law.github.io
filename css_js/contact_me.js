@@ -22,7 +22,8 @@ $(function () {
       $.ajax({
         url: "https://script.google.com/macros/s/AKfycbwb_ycqGeOdCzOwu2kM0ht8frSXKn2w81A2ayx8/exec",
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'access-control-allow-origin: *'
         },
         type: "POST",
         data: {
