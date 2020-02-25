@@ -22,11 +22,9 @@ $(function () {
       //For some reason below headers is working but I don't think it should
       $.ajax({
         headers: {
-          'Access-Control-Allow-Origin: *',
-          Accept : "text/plain; charset=utf-8",
           "Content-Type": 'application/x-www-form-urlencoded'
         },
-        url: "https://script.google.com/macros/s/AKfycbwb_ycqGeOdCzOwu2kM0ht8frSXKn2w81A2ayx8/exec",
+        url: "https://script.google.com/macros/s/AKfycbwlvoFcIKlwKaDllprrFm1hmJdxy6Wz_joDzlh2Lw_q_ai4Dms/exec",
         type: "POST",
         data: {
           name: name,
