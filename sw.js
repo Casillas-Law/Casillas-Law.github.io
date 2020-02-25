@@ -4,12 +4,12 @@ var urlsToCache = [
   // '/css_js/custom.css',
   // '/css_js/screen.css',
   // '/css_js/bootstrap.min.css',
-  // '/css_js/jquery.min.js',
-  // '/css_js/bootstrap.bundle.min.js',
-  // '/css_js/jquery.easing.min.js',
-  // '/css_js/jqBootstrapValidation.js',
-  // '/css_js/contact_me.js',
-  '/css_js/custom.min.js'
+    // '/css_js/bootstrap.bundle.min.js',
+  '/css_js/jquery.min.js',
+  '/css_js/jquery.easing.min.js',
+  '/css_js/jqBootstrapValidation.js',
+  '/css_js/contact_me.js',
+  '/css_js/joe.js'
 ];
 
 self.addEventListener('install', function (event) {
