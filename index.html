@@ -433,12 +433,66 @@
   </section>
 
   <!-- #endregion -->
+
+    <!-- #region Contact Español-->
+    <section class="page-section" id="contactEs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading ">Requesta una Consulta</h2>
+            <h3 class="section-subheading text-muted">Contacta con Nuestra Officina</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Su Nombre *"
+                      required="required" data-validation-required-message="Por favor introduzca su nombre.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" name="email" type="email" placeholder="Su correo electrónico *"
+                      required="required" data-validation-required-message="Por favor introduzca su correo electrónico.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Su Número de teléfono *"
+                      required="required" data-validation-required-message="Por favor introduzca su número de teléfono.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" placeholder="Su mensaje *"
+                      required="required" data-validation-required-message="Por favor introduzca su mensaje."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-lg" type="submit">
+                    Enviar mensaje
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- #endregion -->
   <script language="javascript" type="text/javascript">
     function show(elementId) {
       document.getElementById("showHideEs").style.display = "block";
       document.getElementById("showHideEn").style.display = "none";
       document.getElementById("aboutshowHideEs").style.display = "block";
       document.getElementById("aboutshowHideEn").style.display = "none";
+      document.getElementById("contactEs").style.display = "none";
       document.getElementById(elementId).style.display = "block";
     };
   </script>
