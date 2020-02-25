@@ -1,0 +1,40 @@
+response headers
+access-control-allow-origin: *
+alt-svc: quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443"; ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+content-encoding: gzip
+content-length: 413
+content-security-policy: script-src 'report-sample' 'nonce-/l2X2y5x+IXoqu7WZDqT+g' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri /cspreport
+content-type: text/html; charset=UTF-8
+date: Tue, 25 Feb 2020 01:51:07 GMT
+expires: Mon, 01 Jan 1990 00:00:00 GMT
+location: https://script.googleusercontent.com/macros/echo?user_content_key=JdeYspmeLCFTfS9Y0V268WBLKLODPQan93PvyQGdKphKeQ9ZaOLxkuUJ3iy4Eq1nFwlexinshoEGWdTSQ_0BJiD2tEOtwuDNm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnC_YZBHno4lThP5KDX6ntI0WLt4nOlsLprz8qu4P-m9baDpsTnr2vyEYZpTak_o22Q&lib=MJ6n4qWH_yCsMZm6hAAlohevctAQHFBqM
+pragma: no-cache
+server: GSE
+set-cookie: SIDCC=AN0-TYtdoHRJq7rMQBS5dMPatTXeT5xFOqsOS2LUYtBmc-PLvSf6NOydbjU1PkiMakQiZ5BzPw; expires=Wed, 24-Feb-2021 01:51:07 GMT; path=/; domain=.google.com; priority=high
+status: 302
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+
+
+request headers 
+:authority: script.google.com
+:method: POST
+:path: /macros/s/AKfycbwb_ycqGeOdCzOwu2kM0ht8frSXKn2w81A2ayx8/exec
+:scheme: https
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+accept-encoding: gzip, deflate, br
+accept-language: en-US,en;q=0.9
+cache-control: max-age=0
+content-length: 75
+content-type: application/x-www-form-urlencoded
+cookie: SID=uAc05_y7GwEjiRhdWr7ItlUV6g8ai3jcDvkjIEvFceGlHR6xvxZt4NN4z-2xIjhVtaUqBQ.; __Secure-3PSID=uAc05_y7GwEjiRhdWr7ItlUV6g8ai3jcDvkjIEvFceGlHR6xXJS7e-zvrNEbZjUrSnmx0A.; HSID=AaP49hR0swLhznnjc; SSID=AC0pF6WBq-ahYCDFP; APISID=hqTUjC6p-1Yszzkw/AVmgNpwTQLD3pH9Gi; SAPISID=GprZaEX5Q9AF4EVj/AQQs5hiR21g2Csvrv; __Secure-HSID=AaP49hR0swLhznnjc; __Secure-SSID=AC0pF6WBq-ahYCDFP; __Secure-APISID=hqTUjC6p-1Yszzkw/AVmgNpwTQLD3pH9Gi; __Secure-3PAPISID=GprZaEX5Q9AF4EVj/AQQs5hiR21g2Csvrv; OGP=-4061129:; ANID=AHWqTUl1n_ZuhZg_eCjHUsnQ-RBNrxVmKRYurakkYXRzw5JMe0h74BCTCa5cSUjd; __utma=23934520.1550772272.1582573182.1582573182.1582581669.2; __utmz=23934520.1582581669.2.2.utmcsr=docs.google.com|utmccn=(referral)|utmcmd=referral|utmcct=/; NID=198=kPHtFyitoeho-G1WScoDL_n6fnjp-x1chLvik1ARyPRuBc-t1OVZZvjz7GPwAQA-T6QUdhKAEos8du0b6hOM8_8R0R7ZBhgtG05xKxFmh9d5fpYl5zv_avPEfs39wu8gL1GY3xdl9JeWLkxFIQroa0v4eT0w5xfjNPktANUSt80j0dw_i-blInSUzQVSFCgDLlDmWQ9WhZoRpQtOjBCjX3Bz2Strg8aVzFtjD9cA3Kc0rMwBwA; 1P_JAR=2020-02-25-01; SIDCC=AN0-TYtapgKy_zbr81xYAYQXWUoMfq3eLXW2_5_3NQcCW6ph5iTHDJFQqoWgtlxQUxfUC7Z6dg
+origin: http://127.0.0.1:5500
+referer: http://127.0.0.1:5500/
+sec-fetch-mode: navigate
+sec-fetch-site: cross-site
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+x-client-data: CIW2yQEIpLbJAQjEtskBCKmdygEIvLDKAQj3tMoBCJe1ygEI7bXKAQiNusoBGLy6ygE=

@@ -19,9 +19,10 @@ $(function () {
       }
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+      //For some reason below headers is working but I don't think it should
       $.ajax({
         headers: {
-          'access-control-allow-origin: *'
+          'Access-Control-Allow-Origin: *',
           Accept : "text/plain; charset=utf-8",
           "Content-Type": 'application/x-www-form-urlencoded'
         },

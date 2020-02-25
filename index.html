@@ -32,6 +32,28 @@
     }
   </style>
 
+  <!-- <script language="javascript" type="text/javascript">
+    // from https://developers.google.com/apps-script/guides/html/communication#forms
+    // Prevent forms from submitting.
+    function preventFormSubmit() {
+      var forms = document.querySelectorAll('form');
+      for (var i = 0; i < forms.length; i++) {
+        forms[i].addEventListener('submit', function (event) {
+          event.preventDefault();
+        });
+      }
+    }
+    window.addEventListener('load', preventFormSubmit);
+
+    function handleFormSubmit(formObject) {
+      google.script.run.withSuccessHandler(displayResult).record_data(formObject);
+    }
+    function displayResult(e) {
+      console.log(e);
+      document.getElementById('thankyou_message').style.display = 'block';
+      document.getElementsByClassName('gform').style.display = 'none';
+    }
+  </script> -->
 </head>
 
 <body id="page-top">
@@ -403,7 +425,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form id="contactForm" name="sentMessage" class="gform" method="POST"            
+          <form id="contactForm" name="sentMessage" class="gform" method="POST"
             action="https://script.google.com/macros/s/AKfycbwb_ycqGeOdCzOwu2kM0ht8frSXKn2w81A2ayx8/exec">
             <div class="row">
               <div class="col-md-6">
@@ -462,7 +484,7 @@
   <script src="./css_js/contact_me.js"></script>
   <script src="./css_js/custom.js"></script>
 
-  <script type="text/javascript">var submitted = false;</script>
+  <!-- <script type="text/javascript">var submitted = false;</script> -->
 
   <!-- <script data-cfasync="false" src="./css_js/form-submission-handler.js"></script> -->
 
