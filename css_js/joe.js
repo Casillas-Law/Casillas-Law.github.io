@@ -33,27 +33,3 @@ $(document).ready(function () {
 
     });
 });
-
-// $(document).ready(function () {
-//     $('#toggleClickSpanish').click(function () {
-//         $('#toggleAllEn').hide();
-//         $('#aboutEn').hide();
-//         $('#servicesEn').hide();
-//         $('#servicesEs').show();
-//         $('#toggleAllEs').show();
-//         $('#aboutEs').show();
-//     });
-// });
-
-// $(document).ready(function () {
-//     $('#showHideEn').click(function () {
-//         $('#servicesEs').hide();
-//         $('#toggleAllEs').hide();
-//         $('#aboutEs').hide();
-//         $('#toggleAllEn').show();
-//         $('#aboutEn').show();
-//         $('#servicesEn').show();
-//     });
-// });
-
-
