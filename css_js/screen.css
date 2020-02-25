@@ -198,8 +198,8 @@ clear: both;
 height: 0;
 }
 ::selection {
-color: #6c757d;
-background-color: #6c757d;
+color: white;
+background-color: blue;
 }
 ::-moz-selection {
 color: #ecf0f1;
