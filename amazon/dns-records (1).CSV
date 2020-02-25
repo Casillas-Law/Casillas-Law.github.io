@@ -1,7 +1,0 @@
-"Domain verification record set:"
-"Record name","Record type","Record Value"
-"_amazonses.casillas-law.github.io","TXT","OWpcECroDftqQBBQr4xD96kIW85D1qUSn/vxQ5our8s="
-
-"Alternate domain verification record:"
-"Record name","Record type","Record Value"
-"casillas-law.github.io","TXT","amazonses:OWpcECroDftqQBBQr4xD96kIW85D1qUSn/vxQ5our8s="
