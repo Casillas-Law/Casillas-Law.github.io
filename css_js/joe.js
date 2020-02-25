@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('#toggleAllEs').show();
 });
@@ -29,7 +28,6 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#showHideEs').click(function () {
         $('#toggleAllEn').hide();
-        $('#toggleAllEs').show();
-
+        $('#toggleAllEs').show();a
     });
 });
