@@ -1,10 +1,10 @@
 @font-face {
   font-family: "ip";
-  src: url(/build/static/fonts/ip/font/ip.eot);
-  src: url(/build/static/fonts/ip/font/ip.eot#iefix) format("embedded-opentype"),
-    url(/build/static/fonts/ip/font/ip.woff) format("woff"),
-    url(/build/static/fonts/ip/font/ip.ttf) format("truetype"),
-    url(/build/static/fonts/ip/font/ip.svg) format("svg");
+  src: url(../fonts/ip/font/ip.eot);
+  src: url(../fonts/ip/font/ip.eot#iefix) format("embedded-opentype"),
+    url(../fonts/ip/font/ip.woff) format("woff"),
+    url(../fonts/ip/font/ip.ttf) format("truetype"),
+    url(../fonts/ip/font/ip.svg) format("svg");
   font-weight: 400;
   font-style: normal;
 }
