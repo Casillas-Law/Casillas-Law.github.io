@@ -1,3 +1,5 @@
+debugger;
+
 $(function () {
     $('#showEnglish').click(function() {
       $('#showHideEn').show();
