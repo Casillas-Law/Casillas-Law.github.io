@@ -24,7 +24,20 @@
       display: block !important;
     }
   </style>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').then(function (registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
 
+  </script>
   </body>
 </head>
 
@@ -238,7 +251,7 @@
   <!-- #region About-->
   <section class="bg-light page-section" id="aboutEs">
     <div class="container" id="aboutshowHideEs" style="display:none" tabindex="0">
-      <div class="row" id="aboutEs">
+      <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Sobre la Abogada</h2>
         </div>
@@ -295,7 +308,7 @@
 
   <section class="bg-light page-section" id="aboutEn">
     <div class="container" id="aboutshowHideEn" style="display:none" tabindex="0">
-      <div class="row" id="aboutEs">
+      <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">About the Attorney</h2>
         </div>
