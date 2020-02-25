@@ -95,9 +95,9 @@
         <div class="intro-heading ">Casillas Law Group</div>
         <p class="intro-lead-in ">Abogada de Inmigración | Immigration Attorney</p>
         <a class="btn btn-primary btn-lg  js-scroll-trigger" onclick="show('showHideEn');"
-          href="#servicesEn">English</a>
+          href="#servicesEn" id="toggleEnglish">English</a>
         <a class="btn btn-primary btn-lg  js-scroll-trigger" onclick="show('showHideEs');"
-          href="#servicesEs">Espa&ntilde;ol</a>
+          href="#servicesEs" id="toggleSpanish">Espa&ntilde;ol</a>
       </div>
     </div>
   </header>
@@ -489,9 +489,9 @@
   <!-- #endregion -->
   <script language="javascript" type="text/javascript">
     function show(elementId) {
-      document.getElementById("showHideEs").style.display = "block";
+      document.getElementById("showHideEs").style.display = "none";
       document.getElementById("showHideEn").style.display = "none";
-      document.getElementById("aboutshowHideEs").style.display = "block";
+      document.getElementById("aboutshowHideEs").style.display = "none";
       document.getElementById("aboutshowHideEn").style.display = "none";
       document.getElementById(elementId).style.display = "block";
     };
@@ -512,6 +512,20 @@
         if (dropdownMenu.is(":visible")) {
           dropdownMenu.parent().toggleClass("open");
         }
+      });
+    });
+
+    $(function () {
+      $('#toggleEnglish').click(function () {
+        $('#toggleAllEn').toggle();
+        $('#toggleAllEs').hide();
+      });
+    });
+
+    $(function () {
+      $('#toggleSpanish').click(function () {
+        $('#toggleAllEs').toggle();
+        $('#toggleAllEn').hide();
       });
     });
 
