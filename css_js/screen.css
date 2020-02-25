@@ -145,7 +145,7 @@ body {
   line-height: 1.2;
 }
 body {
-  background: #fff /*url(~/img/bg-pattern.jpg)*/;
+  background: #fff
 }
 .container {
   position: relative;
