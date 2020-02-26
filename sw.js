@@ -1,27 +1,29 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  // '/',
-  // '/css_js/custom.css',
-  // '/css_js/screen.css',
-  // '/css_js/bootstrap.min.css',
-    // '/css_js/bootstrap.bundle.min.js',
+  '/',
+  '/index.html',
+  '/css_js/custom.css',
+  '/css_js/screen.css',
+  '/css_js/bootstrap.min.css',
+  '/css_js/bootstrap.bundle.min.js',
   '/css_js/jquery.min.js',
   '/css_js/jquery.easing.min.js',
   '/css_js/jqBootstrapValidation.js',
   '/css_js/contact_me.js',
+  '/css_js/contact_me_en.js',
   '/css_js/joe.js'
 ];
 
-self.addEventListener('install', function (event) {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function (cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
+// self.addEventListener('install', function (event) {
+//   // Perform install steps
+//   event.waitUntil(
+//     caches.open(CACHE_NAME)
+//       .then(function (cache) {
+//         console.log('Opened cache');
+//         return cache.addAll(urlsToCache);
+//       })
+//   );
+// });
 
 
 self.addEventListener('fetch', function (event) {
