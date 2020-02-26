@@ -1,9 +1,8 @@
 // start with spanish
-
 $(document).ready(function () {
     $('#contactEn').hide();
     $('#toggleAllEs').show();
-    $('#contct').show();
+    $('#contact').show();
 });
 
 // main english and spanish buttons
@@ -12,7 +11,7 @@ $(document).ready(function () {
         $('#toggleAllEn').hide();
         $('#toggleAllEs').show();
         $('#contactEn').hide();
-        $('#contct').show();
+        $('#contact').show();
     });
 });
 
@@ -21,7 +20,7 @@ $(document).ready(function () {
         $('#toggleAllEs').hide();
         $('#toggleAllEn').show();
         $('#contact').hide();
-        $('#contctEn').show();
+        $('#contactEn').show();
     });
 });
 
@@ -31,7 +30,7 @@ $(document).ready(function () {
         $('#toggleAllEs').hide();
         $('#toggleAllEn').show();
         $('#contact').hide();
-        $('#contctEn').show();
+        $('#contactEn').show();
     });
 });
 
@@ -40,7 +39,7 @@ $(document).ready(function () {
         $('#toggleAllEn').hide();
         $('#toggleAllEs').show();
         $('#contactEn').hide();
-        $('#contct').show();
+        $('#contact').show();
     });
 });
 
@@ -50,7 +49,7 @@ $(document).ready(function () {
         $('#toggleAllEs').hide();
         $('#toggleAllEn').show();
         $('#contact').hide();
-        $('#contctEn').show();
+        $('#contactEn').show();
     });
 });
 
@@ -59,6 +58,26 @@ $(document).ready(function () {
         $('#toggleAllEn').hide();
         $('#toggleAllEs').show();
         $('#contactEn').hide();
-        $('#contct').show();
+        $('#contact').show();
     });
 });
+
+// contact shows
+$(document).ready(function () {
+    $('#clickShowContactEn').click(function () {
+        $('#toggleAllEs').hide();
+        $('#toggleAllEn').show();
+        $('#contact').hide();
+        $('#contactEn').show();
+    });
+});
+
+$(document).ready(function () {
+    $('#clickShowContactEs').click(function () {
+        $('#toggleAllEn').hide();
+        $('#toggleAllEs').show();
+        $('#contactEn').hide();
+        $('#contact').show();
+    });
+});
+
