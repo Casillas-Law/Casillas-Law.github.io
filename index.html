@@ -24,7 +24,7 @@
       display: block !important;
     }
   </style>
-  <script>
+  <!-- <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('/sw.js').then(function (registration) {
@@ -36,7 +36,7 @@
         });
       });
     }
-  </script>
+  </script> -->
 
   <script src="/css_js/jquery.min.js"></script>
 
@@ -64,8 +64,8 @@
               aria-expanded="false">Services</a>
             <div x-placement="bottom-start" aria-labelledby="dropdown-basic-button" class="dropdown-menu"
               style="position: absolute; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px); will-change: transform;">
-              <a href="#servicesEn" id ="showHideEn" class="dropdown-item js-scroll-trigger">English</a>
-              <a href="#servicesEs" id ="showHideEs" class="dropdown-item js-scroll-trigger">Español</a>
+              <a href="#servicesEn" id ="clickShowServicesEn" class="dropdown-item js-scroll-trigger">English</a>
+              <a href="#servicesEs" id ="clickShowServicesEs" class="dropdown-item js-scroll-trigger">Español</a>
             </div>
           </li>
 
@@ -74,8 +74,8 @@
               aria-expanded="false">About</a>
             <div x-placement="bottom-start" aria-labelledby="dropdown-basic-button" class="dropdown-menu"
               style="position: absolute; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px); will-change: transform;">
-              <a href="#aboutEn" class="dropdown-item js-scroll-trigger" onclick="show('aboutshowHideEn');">English</a>
-              <a href="#aboutEs" class="dropdown-item js-scroll-trigger" onclick="show('aboutshowHideEs');">Español</a>
+              <a href="#aboutEn" id="clickShowAboutEn" class="dropdown-item js-scroll-trigger">English</a>
+              <a href="#aboutEs" id="clickShowAboutEs" class="dropdown-item js-scroll-trigger">Español</a>
             </div>
           </li>
           <li class="nav-item">
@@ -111,7 +111,7 @@
         <div class="col-xl-4" tabindex="0">
           <h4 class="subheading">
             INMIGRACIÓN BASADA EN LA FAMILIA
-          </h4>
+          </h4><br>
           <ul>
             <li>Peticiones familiares</li>
             <li>Solicitudes de tarjeta verde</li>
@@ -126,11 +126,11 @@
             <li>Ciudadanía derivada</li>
             <li>Entrevistas para el ajuste de estatus</li>
             <li>Entrevistas para la Naturalización</li>
-            <li>K-Visas</li>
+            <li>K-Visas</li><br>
           </ul>
         </div><!-- /.col-xl-4 -->
         <div class="col-xl-4" tabindex="0">
-          <h4 class="subheading">DEFENSA DE ELIMINACIÓN</h4>
+          <h4 class="subheading">DEFENSA DE ELIMINACIÓN</h4><br>
           <ul>
             <li>Cancelación de la eliminación</li>
             <li>Asilo Defensivo</li>
@@ -143,7 +143,7 @@
         <div class="col-xl-4" tabindex="0">
           <h4 class="subheading">
             ALIVIO PARA LAS VÍCTIMAS
-          </h4>
+          </h4><br>
           <ul>
             <li>Ley de Alivio contra la Violencia contra la Mujer (VAWA)</li>
             <li>Certificaciones U Visa</li>
@@ -155,7 +155,7 @@
         <div class="col-xl-4" tabindex="0">
           <h4 class="subheading">
             OTRAS FORMAS DE ALIVIO
-          </h4>
+          </h4><br>
           <ul>
             <li>Estado de Protección Temporal (TPS)</li>
             <li>Estatus Especial de Inmigrante Juvenil (SIJS)</li>
@@ -165,7 +165,7 @@
           </ul>
         </div><!-- /.col-xl-4 -->
         <div class="col-xl-4" tabindex="0">
-          <h4 class="subheading">OTROS SERVICIOS</h4>
+          <h4 class="subheading">OTROS SERVICIOS</h4><br>
           <ul>
             <li>Renovaciones de permisos de trabajo</li>
             <li>Renovaciones de Green Cards</li>
@@ -252,7 +252,7 @@
           <h2 class="section-heading ">Legal Services</h2><br>
         </div>
         <div class="col-xl-4">
-          <h4 class="subheading">IMMIGRATION SERVICES</h4>
+          <h4 class="subheading">IMMIGRATION SERVICES<h4><br>
           <ul>
             <li>Family Petitions</li>
             <li>Green Card Applications</li>
@@ -267,11 +267,11 @@
             <li>Derivative Citizenship</li>
             <li>Interviews for Adjustment of Status</li>
             <li>Interviews for Naturalization</li>
-            <li>K-Visas</li>
+            <li>K-Visas</li><br>
           </ul>
         </div><!-- /.col-xl-4 -->
         <div class="col-xl-4" tabindex="0">
-          <h4 class="subheading">REMOVAL DEFENSE</h4>
+          <h4 class="subheading">REMOVAL DEFENSE<h4><br>
           <ul>
             <li>Cancellation of Removal</li>
             <li>Defensive Asylum</li>
@@ -282,7 +282,7 @@
           </ul>
         </div><!-- /.col-xl-4 -->
         <div class="col-xl-4" tabindex="0">
-          <h4 class="subheading">RELIEF FOR VICTIMS</h4>
+          <h4 class="subheading">RELIEF FOR VICTIMS<h4><br>
           <ul>
             <li>Relief under Violence Against Women’s Act (VAWA)</li>
             <li>U Visa Certifications</li>
@@ -292,7 +292,7 @@
           </ul>
         </div><!-- /.col-xl-4 -->
         <div class="col-xl-4" tabindex="0">
-          <h4 class="subheading">OTHER FORMS OF RELIEF</h4>
+          <h4 class="subheading">OTHER FORMS OF RELIEF<h4><br>
           <ul>
             <li>Temporary Protected Status (TPS)</li>
             <li>Special Juvenile Immigrant Status (SIJS)</li>
@@ -302,7 +302,7 @@
           </ul>
         </div><!-- /.col-xl-4 -->
         <div class="col-xl-4" tabindex="0">
-          <h4 class="subheading">OTHER SERVICES </h4>
+          <h4 class="subheading">OTHER SERVICES <h4><br>
           <ul>
             <li>Renewals of Work Permits</li>
             <li>Renewals of Green Cards</li>
