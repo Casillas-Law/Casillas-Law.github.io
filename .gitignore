@@ -5,3 +5,7 @@ config
 credentials
 bin
 appsettings.json
+/.vs
+/.vscode
+.vs
+.vscode
