@@ -652,6 +652,62 @@ section#contact {
         font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
     }
 
+    section#contactEn {
+        background-color: #212529;
+        background-image: url(../img/map-image.png);
+        background-repeat: no-repeat;
+        background-position: center
+    }
+    
+        section#contactEn .section-heading {
+            color: #fff
+        }
+    
+        section#contactEn .form-group {
+            margin-bottom: 25px
+        }
+    
+            section#contactEn .form-group input, section#contactEn .form-group textarea {
+                padding: 20px
+            }
+    
+                section#contactEn .form-group input.form-control {
+                    height: auto
+                }
+    
+                section#contactEn .form-group textarea.form-control {
+                    height: 248px
+                }
+    
+        section#contactEn .form-control:focus {
+            border-color: #1091c3;
+            box-shadow: none
+        }
+    
+        section#contactEn ::-webkit-input-placeholder {
+            font-weight: 700;
+            color: #ced4da;
+            font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+        }
+    
+        section#contactEn :-moz-placeholder {
+            font-weight: 700;
+            color: #ced4da;
+            font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+        }
+    
+        section#contactEn ::-moz-placeholder {
+            font-weight: 700;
+            color: #ced4da;
+            font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+        }
+    
+        section#contactEn :-ms-input-placeholder {
+            font-weight: 700;
+            color: #ced4da;
+            font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+        }
+
 .footer {
     padding: 25px 0;
     text-align: center
