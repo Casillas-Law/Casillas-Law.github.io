@@ -32,7 +32,7 @@
     n(".js-scroll-trigger").click(function() {
       n(".navbar-collapse").collapse("hide");
     }),
-    n("body").scrollspy({ target: "#mainNav", offset: 56 }),
+    n("body").scrollspy({ target: "#home", offset: 56 }),
     o(),
     n(window).scroll(o);
 })(jQuery);
