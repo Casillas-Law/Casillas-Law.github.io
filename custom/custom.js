@@ -1,5 +1,9 @@
-$(document).on("click", 'a[href^="#"]', function(e) {
+// main english and spanish buttons
+$(document).ready(function() {
   $("#mainNav").addClass("navbar-shrink");
+});
+
+$(document).on("click", 'a[href^="#"]', function(e) {
   e.preventDefault();
   $("html, body")
     .stop()

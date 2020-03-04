@@ -15,14 +15,14 @@ $(document).ready(function() {
   });
 });
 
-// $(document).ready(function() {
-//   $("#toggleClickEnglish").click(function() {
-//     $("#contactEn").show();
-//     $("#toggleAllEn").show();
-//     $("#toggleAllEs").hide();
-//     $("#contact").hide();
-//   });
-// });
+$(document).ready(function() {
+  $("#toggleClickEnglish").click(function() {
+    $("#contactEn").show();
+    $("#toggleAllEn").show();
+    $("#toggleAllEs").hide();
+    $("#contact").hide();
+  });
+});
 
 // show services
 $(document).ready(function() {
