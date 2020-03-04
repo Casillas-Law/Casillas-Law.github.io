@@ -1,9 +1,7 @@
 !(function(n) {
   "use strict";
   function o() {
-    100 < n("#mainNav").offset().top
-      ? n("#mainNav").addClass("navbar-shrink")
-      : n("#mainNav").removeClass("navbar-shrink");
+    n("#mainNav").addClass("navbar-shrink");
   }
   $(".dropdown-toggle").on("click", function() {
     $(".dropdown-menu").toggle();
