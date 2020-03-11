@@ -1,17 +1,17 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = "my-site-cache-v1";
 var urlsToCache = [
-  '/',
-  '/index.html',
-  '/css_js/custom.css',
-  '/css_js/screen.css',
-  '/css_js/bootstrap.min.css',
-  '/css_js/bootstrap.bundle.min.js',
-  '/css_js/jquery.min.js',
-  '/css_js/jquery.easing.min.js',
-  '/css_js/jqBootstrapValidation.js',
-  '/css_js/contact_me.js',
-  '/css_js/contact_me_en.js',
-  '/css_js/joe.js'
+  "/",
+  "/index.html",
+  "/css_js/custom.css",
+  "/css_js/screen.css",
+  "/css_js/bootstrap.min.css",
+  "/css_js/bootstrap.bundle.min.js",
+  "/css_js/jquery.min.js",
+  "/css_js/jquery.easing.min.js",
+  "/css_js/jqBootstrapValidation.js",
+  "/css_js/contact_me.js",
+  "/css_js/contact_me_en.js",
+  "/css_js/joe.js"
 ];
 
 // self.addEventListener('install', function (event) {
@@ -25,51 +25,44 @@ var urlsToCache = [
 //   );
 // });
 
-
-self.addEventListener('fetch', function (event) {
+self.addEventListener("fetch", function(event) {
   event.respondWith(
-    caches.match(event.request)
-      .then(function (response) {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
+    caches.match(event.request).then(function(response) {
+      // Cache hit - return response
+      if (response) {
+        return response;
       }
-      )
+      return fetch(event.request);
+    })
   );
 });
 
-self.addEventListener('fetch', function (event) {
+self.addEventListener("fetch", function(event) {
   event.respondWith(
-    caches.match(event.request)
-      .then(function (response) {
-        // Cache hit - return response
-        if (response) {
+    caches.match(event.request).then(function(response) {
+      // Cache hit - return response
+      if (response) {
+        return response;
+      }
+
+      return fetch(event.request).then(function(response) {
+        // Check if we received a valid response
+        if (!response || response.status !== 200 || response.type !== "basic") {
           return response;
         }
 
-        return fetch(event.request).then(
-          function (response) {
-            // Check if we received a valid response
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
+        // IMPORTANT: Clone the response. A response is a stream
+        // and because we want the browser to consume the response
+        // as well as the cache consuming the response, we need
+        // to clone it so we have two streams.
+        var responseToCache = response.clone();
 
-            // IMPORTANT: Clone the response. A response is a stream
-            // and because we want the browser to consume the response
-            // as well as the cache consuming the response, we need
-            // to clone it so we have two streams.
-            var responseToCache = response.clone();
+        caches.open(CACHE_NAME).then(function(cache) {
+          cache.put(event.request, responseToCache);
+        });
 
-            caches.open(CACHE_NAME)
-              .then(function (cache) {
-                cache.put(event.request, responseToCache);
-              });
-
-            return response;
-          }
-        );
-      })
+        return response;
+      });
+    })
   );
 });
